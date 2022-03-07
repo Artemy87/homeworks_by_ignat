@@ -1,0 +1,46 @@
+.message_widow
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+
+    background: #20f520;
+    width: 350px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.info
+{
+    /*border-radius: 15px;*/
+    padding: 10px;
+    background: #323232;
+    color: whitesmoke;
+}
+
+.info::after
+{
+    content: '';
+    position: absolute;
+    left: 117px;
+    top: 203px;
+    border: 10px solid transparent;
+    border-right: 15px solid #323232;;
+}
+
+.name {
+    color: blueviolet;
+}
+
+.image
+{
+    margin: 5px;
+    padding: 5px;
+}
+
+.image > img
+{
+    height: 100px;
+    border-radius: 50%;
+}
