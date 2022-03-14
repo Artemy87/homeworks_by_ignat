@@ -1,46 +1,49 @@
-.message_widow
-{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto;
+.message {
+    display: flex;
+    align-items: flex-end;
 
-    background: #20f520;
-    width: 350px;
-    margin: 20px;
+    font-family: Helvetica;
+    background-color: rgba(128, 128, 128, 0.24);
     padding: 10px;
-    border: 1px solid grey;
+    border-radius: 15px;
 }
 
-.info
-{
-    /*border-radius: 15px;*/
+.image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.content {
+    border-radius: 15px 15px 15px 0;
     padding: 10px;
-    background: #323232;
+    background: rgb(50, 50, 50);
     color: whitesmoke;
 }
 
-.info::after
-{
-    content: '';
-    position: absolute;
-    left: 117px;
-    top: 203px;
-    border: 10px solid transparent;
-    border-right: 15px solid #323232;;
-}
-
 .name {
-    color: blueviolet;
+    color: #a750fa;
+    margin: 5px 0 0 10px;
 }
 
-.image
-{
-    margin: 5px;
-    padding: 5px;
+.text {
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
+    font-size: .85em;
+    margin: 10px;
 }
 
-.image > img
-{
-    height: 100px;
-    border-radius: 50%;
+.time {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    color: #56a056;
+    font-size: .8rem;
+}
+
+.angle {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(50, 50, 50) 0);
 }

@@ -1,3 +1,16 @@
 .someClass {
 
 }
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.16);
+    border-radius: 15px;
+}
+
+.filter {
+
+}

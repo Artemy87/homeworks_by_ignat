@@ -4,8 +4,8 @@ import AlternativeMessage from "./AlternativeMessage";
 
 const messageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
-    name: 'Some Name',
-    message: 'some text',
+    name: 'Sarah Connor',
+    message: 'The unknown future rolls toward us. I face it for the first time with a sense of hope. Because if a machine, a Terminator... can learn the value of human life... maybe we can too.',
     time: '22:00',
 }
 
