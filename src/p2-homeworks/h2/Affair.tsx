@@ -1,6 +1,8 @@
 import React, {FC} from 'react'
 import {AffairType} from "./HW2";
-import style from './Affair.module.css';
+import s from './Affair.module.css';
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+
 
 type AffairPropsType = {
     // key не нужно типизировать
@@ -11,15 +13,15 @@ type AffairPropsType = {
 const Affair: FC<AffairPropsType> = (props) => {
     const deleteCallback = () => {props.deleteAffairCallback(props.affair._id)}// need to fix
 
-    let colorPriority = props.affair.priority === 'low' ? `${style.priority} ${style.low}`
-        : props.affair.priority === 'middle' ? `${style.priority} ${style.middle}`
-        : `${style.priority} ${style.high}`
+    let colorPriority = props.affair.priority === 'low' ? `${s.priority} ${s.low}`
+        : props.affair.priority === 'middle' ? `${s.priority} ${s.middle}`
+        : `${s.priority} ${s.high}`
     console.log(colorPriority)
     return (
-        <div className={style.container}>
-            <div>{props.affair.name}</div>
+        <div className={s.container}>
+            <div className={s.name}>{props.affair.name}</div>
             <div className={colorPriority}>{props.affair.priority}</div>
-            <button onClick={deleteCallback}>X</button>
+            <SuperButton className={s.deleteButtons} onClick={deleteCallback}>X</SuperButton>
         </div>
     )
 }

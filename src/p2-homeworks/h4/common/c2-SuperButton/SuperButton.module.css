@@ -8,15 +8,9 @@
     border-radius: 0.4em;
     color: #ffffff;
     cursor: pointer;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-align-self: center;
-    /*-ms-flex-item-align: center;*/
     align-self: center;
     font-size: 1rem;
-    /*font-weight: 400;*/
     line-height: 1;
     margin: 10px;
     padding: 0.6em 1.5em;
@@ -53,10 +47,6 @@
     border-radius: 0.4em;
     color: lightslategrey;
     cursor: pointer;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
@@ -64,12 +54,14 @@
     font-weight: 400;
     line-height: 1;
     margin: 10px;
-    padding: 0.4em 0.8em;
+    padding: 0 0.7em;
+    height: 1.3rem;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
+    font-size: 16px;
 }
 .default:hover {
     color: white;
@@ -80,6 +72,7 @@
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
+
 .default:hover {
     box-shadow: 0 0 40px 40px #697786 inset;
 }

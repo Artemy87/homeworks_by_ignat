@@ -1,13 +1,9 @@
-.someClass {
-
-}
-
-.error {
+.errorMessage {
     color: red;
 }
 
 .inputClass {
-    border: 1px solid red;
+    border: 5px solid red;
 }
 
 .count {

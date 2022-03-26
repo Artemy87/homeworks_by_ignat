@@ -1,18 +1,35 @@
 .container {
     display: grid;
-    grid-template-columns: minmax(80px, auto) auto 30px;
+    grid-template-columns: minmax(80px, auto) auto 60px;
     width: 350px;
 }
 
 .priority.low {
+    display: flex;
+    align-items: center;
     color: orange;
 }
 
 .priority.middle {
+    display: flex;
+    align-items: center;
     color: green;
 }
 
 .priority.high {
+    display: flex;
+    align-items: center;
     color: red;
     font-weight: bold;
+}
+
+.deleteButtons {
+    background-color: red;
+    margin: 0 10px;
+    padding: 50px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
 }

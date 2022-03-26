@@ -2,6 +2,7 @@ import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
 
+
 type GreetingContainerPropsType = {
     users: UserType[] // need to fix any
     addUserCallback: (name: string)=>void // need to fix any
@@ -9,13 +10,15 @@ type GreetingContainerPropsType = {
 
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
+
     const [name, setName] = useState<string>('') // need to fix any
-    const [error, setError] = useState<string>('') // need to fix any
+    const [error, setError] = useState<string | null>(null) // need to fix any
 
     const setNameCallback = (e:ChangeEvent<HTMLInputElement>) => { // need to fix any
         setError('')
         setName(e.currentTarget.value) // need to fix
     }
+
     const addUser = () => {
         if(name.trim() !== '') {
             addUserCallback(name);
@@ -27,11 +30,14 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     }
 
     const onKeyPress = (e:KeyboardEvent<HTMLInputElement>) => {
-        if(e.key === 'Enter') {
+        setError(null)
+        if(e.key === 'Enter' && name.trim() !== '') {
             addUserCallback(name)
             alert(`Hello ${name}!`)
             setName('')
-        };
+        } else {
+            setError('name is require!')
+        }
 
     }
 

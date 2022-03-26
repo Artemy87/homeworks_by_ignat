@@ -1,7 +1,3 @@
-.someClass {
-
-}
-
 .container {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -11,6 +7,31 @@
     border-radius: 15px;
 }
 
-.filter {
 
+.allButton {
+    color: #c81f1f;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 0;
+    border: 1px solid black;
+    margin: 1px;
+
+}
+
+.highButton, .middleButton, .lowButton {
+    color: #c81f1f;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 0;
+    border: 1px solid black;
+    margin: 1px;
+
+}
+
+.allButton {
+    border-radius: 5px 0 0 5px;
+}
+
+.lowButton {
+    border-radius: 0 5px 5px 0;
 }
