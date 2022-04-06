@@ -3,8 +3,7 @@ import React from 'react'
 function Header() {
     return (
         <div>
-            Add NavLinks
-
+            // add NavLinks
 
         </div>
     )

@@ -1,26 +1,49 @@
-import React from 'react'
+import React, {ChangeEvent, KeyboardEvent, FC} from 'react'
 import s from './Greeting.module.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
 
 type GreetingPropsType = {
-    name: any // need to fix any
-    setNameCallback: any // need to fix any
-    addUser: any // need to fix any
-    error: any // need to fix any
-    totalUsers: any // need to fix any
+    name: string // need to fix any
+    setNameCallback: (name:ChangeEvent<HTMLInputElement>)=>void // need to fix any
+    onKeyPress: (e:KeyboardEvent<HTMLInputElement>) => void
+    addUser: ()=>void // need to fix any
+    error: string | null // need to fix any
+    totalUsers: number // need to fix any
+
 }
 
 // презентационная компонента (для верстальщика)
-const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
+const Greeting: FC<GreetingPropsType> = (
+    {
+        name,
+        setNameCallback,
+        onKeyPress,
+        addUser,
+        error,
+        totalUsers
+    }
 ) => {
-    const inputClass = s.error // need to fix with (?:)
+
+    // const inputClass = s.error // need to fix with (?:)
 
     return (
         <div>
-            <input value={name} onChange={setNameCallback} className={inputClass}/>
-            <span>{error}</span>
-            <button onClick={addUser}>add</button>
-            <span>{totalUsers}</span>
+            {/*<input*/}
+            {/*    value={name}*/}
+            {/*    onChange={setNameCallback}*/}
+            {/*    onKeyPress={onKeyPress}*/}
+            {/*    className={error ? s.inputClass : ''}/>*/}
+            <SuperInputText
+                value={name}
+                onChange={setNameCallback}
+                onKeyPress={onKeyPress}
+                className={s.inputClass}/>
+            <SuperButton disabled={!!error} onClick={addUser}>
+                add
+            </SuperButton>
+            <span className={s.count}>count users: {totalUsers}</span>
+            { error && <div className={s.errorMessage}>{error}</div>}
         </div>
     )
 }

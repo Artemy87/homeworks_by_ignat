@@ -1,7 +1,78 @@
-.default {
+.red {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fd3636;
+    border: 1px solid #900000;
+    border-radius: 0.4em;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-align-self: center;
+    align-self: center;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 10px;
+    padding: 0.6em 1.5em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
 
+.red:hover {
+    color: white;
+    outline: 0;
 }
 
 .red {
-    background: red;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.red:hover {
+    box-shadow: 0 0 40px 40px #697786 inset;
+}
+
+
+.default {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: red;
+    border: 1px solid #fbacac;
+    background-color: #f4f4f4;
+    border: 2px solid lightslategrey;
+    border-radius: 0.4em;
+    color: lightslategrey;
+    cursor: pointer;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 10px;
+    padding: 0 0.7em;
+    height: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+.default:hover {
+    color: white;
+    outline: 0;
+}
+
+.default {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.default:hover {
+    box-shadow: 0 0 40px 40px #697786 inset;
 }
