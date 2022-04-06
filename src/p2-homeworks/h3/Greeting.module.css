@@ -1,16 +1,7 @@
-.errorMessage {
-    color: red;
+.someClass {
+
 }
 
-.inputClass {
-    border: 5px solid red;
-}
-
-.count {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #a750fa;
-    margin: 0;
-    padding: 0;
-    margin-left: 30px;
+.error {
+    border: 1px solid red;
 }

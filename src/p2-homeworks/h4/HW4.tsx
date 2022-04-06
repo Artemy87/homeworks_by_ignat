@@ -22,7 +22,7 @@ function HW4() {
     return (
         <div>
             <hr/>
-            <h3>Homeworks 4</h3>
+            homeworks 4
 
             <div className={s.column}>
                 <SuperInputText
@@ -31,7 +31,6 @@ function HW4() {
                     onEnter={showAlert}
                     error={error}
                     // spanClassName={s.testSpanError}
-                    // className={s.testInput} // если не перадть пропс, то будет стандартный класс
                 />
 
                 <SuperInputText
