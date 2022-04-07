@@ -1,6 +1,7 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
+import s from './GreetingContainer.module.css'
 
 
 type GreetingContainerPropsType = {
@@ -44,14 +45,14 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const totalUsers = users.length // need to fix
 
     return (
-        <Greeting
+        <div className={s.container}><Greeting
             name={name}
             setNameCallback={setNameCallback}
             onKeyPress={onKeyPress}
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
-        />
+        /></div>
     )
 }
 

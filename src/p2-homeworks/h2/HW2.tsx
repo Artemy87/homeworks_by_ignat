@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import s from './HW3.module.css'
 
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle'
@@ -22,9 +23,6 @@ const defaultAffairs: AffairType[] = [ // need to fix any
 
 // pure helper functions
 export const filterAffairs = (affairs: AffairType[], filter: FilterType):AffairType[] => { // need to fix any
-    // if (filter === 'all') {
-    //     return affairs
-    // }
     if (filter === 'high') {
         return affairs.filter(a => a.priority === 'high')
     }
@@ -49,20 +47,17 @@ function HW2() {
 
     return (
         <div>
-            <hr/>
+            <div className={s.hw3}> {/*should work (должно работать)*/}
             <h3>Homeworks 2</h3>
-
-            {/*should work (должно работать)*/}
-            <Affairs
-                data={filteredAffairs}
-                setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
-            />
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeAffairs/>*/}
-            <hr/>
+                <Affairs
+                    data={filteredAffairs}
+                    setFilter={setFilter}
+                    deleteAffairCallback={deleteAffairCallback}
+                />
+                <hr/>
+                для личного творчества, могу проверить
+                {/*<AlternativeAffairs/>*/}
+            </div>
         </div>
     )
 }

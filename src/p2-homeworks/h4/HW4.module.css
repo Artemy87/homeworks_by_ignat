@@ -6,6 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: rgba(128, 128, 128, 0.16);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 40px;
 }
 
 .testSpanError {

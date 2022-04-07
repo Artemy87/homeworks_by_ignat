@@ -1,0 +1,22 @@
+.header {
+    background: #00e524;
+    padding: 15px;
+    border-radius: 10px;
+
+    position: relative;
+    left: -280px;
+    width: 260px;
+    text-align: center;
+    transition: left .3s linear;
+}
+
+a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.header:hover {
+    left: 0;
+}
