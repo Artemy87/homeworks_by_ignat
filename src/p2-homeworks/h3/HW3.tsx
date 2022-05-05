@@ -26,8 +26,8 @@ function HW3() {
                     users={users}
                     addUserCallback={addUserCallback}/>
 
-                <hr/>
-                для личного творчества, могу проверить
+
+                {/*для личного творчества, могу проверить*/}
                 {/*<AlternativeGreeting/>*/}</div>
         </div>
     )

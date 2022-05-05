@@ -15,10 +15,10 @@ function HW6() {
     }
 
     return (
-        <div>
+        <div className={s.hw6}>
             <h3>Homeworks 6</h3>
             {/*should work (должно работать)*/}
-            <div className={s.hw6}>
+            <div className={s.group}>
                 <div>
                     <SuperEditableSpan
                         value={value}
@@ -29,7 +29,6 @@ function HW6() {
                 <SuperButton onClick={save}>save</SuperButton>
                 <SuperButton onClick={restore}>restore</SuperButton>
 
-                <hr/>
                 {/*для личного творчества, могу проверить*/}
                 {/*<AlternativeSuperEditableSpan/>*/}</div>
         </div>
