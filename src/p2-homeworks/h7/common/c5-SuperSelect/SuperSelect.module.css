@@ -1,0 +1,17 @@
+.select {
+    outline: none;
+    padding: 3px;
+    width: 40px;
+    border-radius: 5px;
+    border: 2px solid dodgerblue;
+    cursor: url(http://65.media.tumblr.com/avatar_91989eab746d_96.png), auto;
+}
+
+.select.focus {
+    outline: none;
+    border: solid 2px red;
+}
+
+.option:active {
+    background-color: yellow;
+}
