@@ -11,10 +11,6 @@
     background-color: grey;
 }
 
-/*.radio:active {*/
-/*    background-color: white;*/
-/*}*/
-
 .radio:checked {
     background-color: #00d500;
 }
