@@ -1,0 +1,36 @@
+.hw8 {
+    background-color: rgba(128, 128, 128, 0.16);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.group {
+    background-color: rgba(128, 128, 128, 0.16);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.people {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 200px;
+    align-content: start;
+}
+
+.peopleList {
+    min-height: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.activeButton {
+    background: #677b8f;
+    color: white;
+}
+
+.activeButtonCheck {
+    background-color: #d75151;
+    color: white;
+}
