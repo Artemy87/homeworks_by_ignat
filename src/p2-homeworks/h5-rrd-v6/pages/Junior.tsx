@@ -11,7 +11,7 @@ export const Junior = () => {
             <h3>Homeworks 7-11</h3>
             <HW7/>
             <HW8/>
-            {/*<HW9/>*/}
+            <HW9/>
             {/*<HW10/>*/}
             {/*<HW11/>*/}
         </div>
