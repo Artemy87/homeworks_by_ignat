@@ -4,15 +4,19 @@ import './index.css'
 import App from './p1-main/m1-ui/u1-app/App'
 import * as serviceWorker from './serviceWorker'
 import {HashRouter} from "react-router-dom";
+import {Provider} from "react-redux";
+import store from "./p2-homeworks/h10/bll/store";
 
 // igg2
 
 ReactDOM.render(
-    <React.StrictMode>
-        <HashRouter>
-            <App/>
-        </HashRouter>
-    </React.StrictMode>,
+    <Provider store={store}>
+        <React.StrictMode>
+            <HashRouter>
+                <App/>
+            </HashRouter>
+        </React.StrictMode>
+    </Provider>,
     document.getElementById("root")
 )
 
