@@ -1,4 +1,4 @@
-.hw12 {
+.hw11 {
     background-color: rgba(128, 128, 128, 0.16);
     border-radius: 15px;
     padding: 10px;
@@ -16,26 +16,8 @@
     min-height: 84px;
 }
 
-.dark {
-    background: dimgrey;
-}
-
-.dark-text {
-    color: aliceblue;
-}
-
-.red {
-    background: lightcoral;
-}
-
-.red-text {
-    color: aqua;
-}
-
-.some {
-    background: lightgreen;
-}
-
-.some-text {
-    color: darkslateblue;
+.superRange {
+    display: flex;
+    flex-direction: row;
+    width: 129px;
 }

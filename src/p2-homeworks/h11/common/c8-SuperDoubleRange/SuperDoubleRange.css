@@ -1,0 +1,15 @@
+.sliderContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.slider {
+    width: 129px;
+}
+
+.value1 {
+    margin-right: 5px;
+}
+.value2 {
+    margin-left: 15px;
+}
