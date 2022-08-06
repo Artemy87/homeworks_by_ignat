@@ -1,25 +1,17 @@
 import React, {ChangeEvent, useState} from 'react';
 import {appAPI} from "./CheckboxAPI";
+import s from './Request.module.css';
 
 const Request = () => {
     let [value, setValue] = useState<boolean>(false);
     let [view, setView] = useState<string>('');
-
-    // useEffect(() => {
-    //     requestsAPI.updateStatus(value)
-    //         .then(res => {
-    //             setValue(res.data.value)
-    //         })
-    //         .catch(err => {
-    //             console.log('err111 ', err)
-    //         })
-    // }, [])
 
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         setValue(e.currentTarget.checked);
     }
 
     const onClickHandler = () => {
+
         appAPI.updateStatus(value)
             .then((res) => {
                 setValue(res.yourBody.success);
@@ -32,10 +24,10 @@ const Request = () => {
     }
 
     return (
-        <div>
-            <div style={{color: 'greenyellow'}}>{view}</div>
-            <button style={{padding: '10px', borderRadius: '10px'}} onClick={onClickHandler}>button</button>
+        <div className={s.box}>
+            <div className={view.length === 50 ? s.base : s.error}>{view}</div>
             <input type='checkbox' checked={value} onChange={onChangeHandler}/>
+            <button onClick={onClickHandler}>button</button>
         </div>
     );
 };
